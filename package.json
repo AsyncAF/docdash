@@ -14,7 +14,6 @@
   },
   "devDependencies": {
     "browser-sync": "latest",
-    "html-minifier": "^3.5.15",
     "jsdoc": "latest",
     "watch-run": "latest"
   },
@@ -23,5 +22,8 @@
   "keywords": [
     "jsdoc",
     "template"
-  ]
+  ],
+  "dependencies": {
+    "html-minifier": "^3.5.15"
+  }
 }

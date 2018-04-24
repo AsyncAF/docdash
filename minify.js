@@ -1,7 +1,5 @@
-var minify = require('html-minifier').minify;
-
 module.exports = function minify(html) {
-  return minify(html, {
+  return require('html-minifier').minify(html, {
     collapseBooleanAttributes: true,
     collapseWhitespace: true,
     maxLineLength: 32 * 1024,
@@ -16,4 +14,4 @@ module.exports = function minify(html) {
     sortAttributes: true,
     sortClassName: true
   });
-};
+}

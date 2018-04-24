@@ -10,6 +10,8 @@ var taffy = require('taffydb').taffy;
 var template = require('jsdoc/template');
 var util = require('util');
 
+var minify = require('./minify');
+
 var htmlsafe = helper.htmlsafe;
 var linkto = helper.linkto;
 var resolveAuthorLinks = helper.resolveAuthorLinks;
@@ -220,6 +222,8 @@ function generate(type, title, docs, filename, resolveLinks) {
     if (resolveLinks) {
         html = helper.resolveLinks(html); // turn {@link foo} into <a href="foodoc.html">foo</a>
     }
+
+    html = minify(html);
 
     fs.writeFileSync(outpath, html, 'utf8');
 }

@@ -27,7 +27,7 @@ The main feature added is that this fork minifies the HTML/CSS/JS output files. 
 
 ## Template
 
-Other than minification, the only real difference between this repo and the original docdash is layout and styling. Check out the [CHANGELOG](CHANGELOG.md) to see all the changes, or take a look at the [AsyncAF docs](https://asyncaf.github.io/AsyncAF/AsyncAF.html) built using this template.
+Other than minification, the only real difference between this repo and the original docdash is layout and styling. Check out the [CHANGELOG](CHANGELOG.md#features) to see all the changes, or take a look at the [AsyncAF docs](https://asyncaf.github.io/AsyncAF/AsyncAF.html) built using this template.
 
 ## Usage
 

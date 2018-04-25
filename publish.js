@@ -9,6 +9,7 @@ var path = require('jsdoc/path');
 var taffy = require('taffydb').taffy;
 var template = require('jsdoc/template');
 var util = require('util');
+var moment = require('moment');
 
 var minify = require('./minify');
 
@@ -20,6 +21,8 @@ var hasOwnProp = Object.prototype.hasOwnProperty;
 
 var data;
 var view;
+
+env.docDate = moment(new Date()).fromNow();
 
 var outdir = path.normalize(env.opts.destination);
 

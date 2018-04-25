@@ -30,7 +30,6 @@
     "template"
   ],
   "dependencies": {
-    "html-minifier": "^3.5.15",
-    "moment": "^2.22.1"
+    "html-minifier": "^3.5.15"
   }
 }

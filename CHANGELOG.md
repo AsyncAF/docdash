@@ -4,6 +4,7 @@
 
 ### Bug Fixes
 
+* add space before date in footer ([b18ca1a](https://github.com/clenemt/docdash/commit/b18ca1a))
 * fix bug where naming conflict caused stack overflow ([334580d](https://github.com/clenemt/docdash/commit/334580d))
 * install html-minifier as a dependency, not a dev dependency, "oops" ([1983d33](https://github.com/clenemt/docdash/commit/1983d33))
 

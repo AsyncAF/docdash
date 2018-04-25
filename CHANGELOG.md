@@ -13,6 +13,7 @@
 * move details section to bottom of each method & add <hr> ([fa1579b](https://github.com/clenemt/docdash/commit/fa1579b))
 * **layout:** move details section below description of each method & remove <hr> ([051b6d3](https://github.com/clenemt/docdash/commit/051b6d3))
 * **perf:** generate minimized html files ([d679ee5](https://github.com/clenemt/docdash/commit/d679ee5))
+* update footer and use moment's fromNow to display date ([ef61e4d](https://github.com/clenemt/docdash/commit/ef61e4d))
 
 
 

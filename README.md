@@ -1,24 +1,6 @@
-<a name="0.4.1"></a>
-## 0.4.1 (2018-04-25)
-
-
-### Bug Fixes
-
-* fix bug where naming conflict caused stack overflow ([334580d](https://github.com/clenemt/docdash/commit/334580d))
-* install html-minifier as a dependency, not a dev dependency, "oops" ([1983d33](https://github.com/clenemt/docdash/commit/1983d33))
-
-
-### Features
-
-* move details section to bottom of each method & add <hr> ([fa1579b](https://github.com/clenemt/docdash/commit/fa1579b))
-* **layout:** move details section below description of each method & remove <hr> ([051b6d3](https://github.com/clenemt/docdash/commit/051b6d3))
-* **perf:** generate minimized html files ([d679ee5](https://github.com/clenemt/docdash/commit/d679ee5))
-
-
-
 # AsyncAF/docdash
 
-This repo was forked from [docdash](https://github.com/clenemt/docdash) for the purpose of styling [AsyncAF's docs](https://asyncaf.github.io/AsyncAF/AsyncAF.html).
+This repo was forked from [docdash](https://github.com/clenemt/docdash) for the purpose of styling the documentation for [AsyncAF](https://asyncaf.github.io/AsyncAF/AsyncAF.html).
 
 There are some minor changes compared with the original docdash as laid out below.
 
@@ -45,7 +27,7 @@ The main feature added is that this fork minifies the HTML/CSS/JS output files. 
 
 ## Template
 
-Other than minification, the only real difference between this repo and the original docdash is layout and styling. Read on to [check out all the changes](#features), or take a look at the [AsyncAF docs](https://asyncaf.github.io/AsyncAF/AsyncAF.html) built using this template.
+Other than minification, the only real difference between this repo and the original docdash is layout and styling. Check out the [CHANGELOG](CHANGELOG.md) to see all the changes, or take a look at the [AsyncAF docs](https://asyncaf.github.io/AsyncAF/AsyncAF.html) built using this template.
 
 ## Usage
 
@@ -87,22 +69,6 @@ Then write an npm script in your `package.json`:
 Just run: `$ npm run docs`
 
 Or, if you're [using the CLI](http://usejsdoc.org/about-getting-started.html): `$ jsdoc -t node_modules/docdash`
-
-<a name="0.4.1"></a>
-## 0.4.1 (2018-04-25)
-
-
-### Bug Fixes
-
-* fix bug where naming conflict caused stack overflow ([334580d](https://github.com/clenemt/docdash/commit/334580d))
-* install html-minifier as a dependency, not a dev dependency, "oops" ([1983d33](https://github.com/clenemt/docdash/commit/1983d33))
-
-
-### Features
-
-* move details section to bottom of each method & add \<hr> ([fa1579b](https://github.com/clenemt/docdash/commit/fa1579b))
-* **layout:** move details section below description of each method & remove \<hr> ([051b6d3](https://github.com/clenemt/docdash/commit/051b6d3))
-* **perf:** generate minimized html files ([d679ee5](https://github.com/clenemt/docdash/commit/d679ee5))
 
 (end of AsyncAF/docdash notes)
 <hr>

@@ -6,15 +6,19 @@
   "scripts": {
     "test": "jsdoc -c fixtures/fixtures.conf.json",
     "sync": "browser-sync start -s ../fixtures-doc -f ../fixtures-doc --reload-delay 1000 --no-ui --no-notify",
-    "watch": "watch-run -d 1000 -p tmpl/**,static/** \"npm run test\""
+    "watch": "watch-run -d 1000 -p tmpl/**,static/** \"npm run test\"",
+    "changes": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
+  "pre-commit": ["changes"],
   "repository": {
     "type": "git",
     "url": "https://github.com/clenemt/docdash.git"
   },
   "devDependencies": {
     "browser-sync": "latest",
+    "conventional-changelog-cli": "^1.3.22",
     "jsdoc": "latest",
+    "pre-commit": "^1.2.2",
     "watch-run": "latest"
   },
   "author": "Clement Moron <clement.moron@gmail.com>",

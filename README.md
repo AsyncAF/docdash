@@ -1,3 +1,79 @@
+# AsyncAF/docdash
+
+This repo was forked from [docdash](https://github.com/clenemt/docdash) for the purpose of styling the documentation for [AsyncAF](https://asyncaf.github.io/AsyncAF/AsyncAF.html).
+
+There are some minor changes compared with the original docdash as laid out below.
+
+## Minification
+The main feature added is that this fork minifies the HTML/CSS/JS output files. AsyncAF/docdash utilizes [`html-minifier`](https://github.com/kangax/html-minifier) for this task. Click below to see the minifier settings that depart from the normal defaults.
+
+<details><pre><code>
+{
+    collapseBooleanAttributes: true,
+    collapseWhitespace: true,
+    maxLineLength: 32 * 1024,
+    minifyCSS: true,
+    minifyJS: true,
+    removeAttributeQuotes: true,
+    removeComments: true,
+    removeOptionalTags: true,
+    removeRedundantAttributes: true,
+    removeScriptTypeAttributes: true,
+    removeStyleLinkTypeAttributes: true,
+    sortAttributes: true,
+    sortClassName: true
+}
+</code></pre></details>
+
+## Template
+
+Other than minification, the only real difference between this repo and the original docdash is layout and styling. Check out the [CHANGELOG](CHANGELOG.md#features) to see all the changes, or take a look at the [AsyncAF docs](https://asyncaf.github.io/AsyncAF/AsyncAF.html) built using this template.
+
+## Usage
+
+If you like the way the template looks, you can use it in your own project as follows:
+
+#### Install
+
+`$ npm install -D AsyncAF/docdash jsdoc`
+
+_Warning: this will install AsyncAF/docdash from github as I haven't published this fork to npm._
+
+#### Setup
+
+Create a `jsdoc.conf.js` configuration file following the documentation [here](#sample-jsdoc.json) or [here](http://usejsdoc.org/about-configuring-jsdoc.html).
+
+To use the AsyncAF/docdash template, just make sure you point to the template in `opts`:
+
+```js
+// jsdoc.conf.js
+...
+opts: {
+  template: 'node_modules/docdash',
+},
+...
+```
+
+Then write an npm script in your `package.json`:
+
+```json
+...
+"scripts": {
+  "docs": "jsdoc -c jsdoc.conf.js",
+},
+...
+```
+
+#### Generate the docs
+
+Just run: `$ npm run docs`
+
+Or, if you're [using the CLI](http://usejsdoc.org/about-getting-started.html): `$ jsdoc -t node_modules/docdash`
+
+(end of AsyncAF/docdash notes)
+<hr>
+(original docdash README)
+
 # Docdash
 [![npm package](https://img.shields.io/npm/v/docdash.svg)](https://www.npmjs.com/package/docdash) [![license](https://img.shields.io/npm/l/docdash.svg)](LICENSE.md)
 

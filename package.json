@@ -9,7 +9,9 @@
     "watch": "watch-run -d 1000 -p tmpl/**,static/** \"npm run test\"",
     "changes": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
-  "pre-commit": ["changes"],
+  "pre-commit": [
+    "changes"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/clenemt/docdash.git"
@@ -28,6 +30,7 @@
     "template"
   ],
   "dependencies": {
-    "html-minifier": "^3.5.15"
+    "html-minifier": "^3.5.15",
+    "moment": "^2.22.1"
   }
 }

@@ -7,7 +7,10 @@
     "test": "jsdoc -c fixtures/fixtures.conf.json",
     "sync": "browser-sync start -s ../fixtures-doc -f ../fixtures-doc --reload-delay 1000 --no-ui --no-notify",
     "watch": "watch-run -d 1000 -p tmpl/**,static/** \"npm run test\"",
-    "changes": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add -f CHANGELOG.md && git commit --allow-empty -m 'update CHANGELOG' && git push --no-verify origin $(git rev-parse --abbrev-ref HEAD)"
+    "changes": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && npm run changes:add && npm run changes:commit && npm run changes:push",
+    "changes:add": "git add -f CHANGELOG.md",
+    "changes:commit": "if [[ $(git log -1 --pretty=%B) = 'feat'*':'* ]] || [[ $(git log -1 --pretty=%B) = 'fix'*':'* ]]; then git commit --allow-empty -m 'update CHANGELOG: '$(git log -1 --pretty=%B); else git commit --allow-empty -m 'empty commit'; fi",
+    "changes:push": "git push --no-verify origin $(git rev-parse --abbrev-ref HEAD)"
   },
   "pre-push": "changes",
   "repository": {

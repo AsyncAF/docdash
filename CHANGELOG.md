@@ -1,5 +1,5 @@
 <a name="0.4.1"></a>
-## 0.4.1 (2018-04-25)
+## 0.4.1 (2018-04-26)
 
 
 ### Bug Fixes
@@ -12,10 +12,12 @@
 ### Features
 
 * move details section to bottom of each method & add <hr> ([fa1579b](https://github.com/clenemt/docdash/commit/fa1579b))
-* update footer and use moment's fromNow to display date ([ef61e4d](https://github.com/clenemt/docdash/commit/ef61e4d))
 * **footer:** update footer and use moment fromNow to display date ([22c94d4](https://github.com/clenemt/docdash/commit/22c94d4))
 * **layout:** move details section below description of each method & remove <hr> ([051b6d3](https://github.com/clenemt/docdash/commit/051b6d3))
 * **perf:** generate minimized html files ([d679ee5](https://github.com/clenemt/docdash/commit/d679ee5))
+* remove moment and instead just use toLocaleDateString to keep things light ([7c2bb52](https://github.com/clenemt/docdash/commit/7c2bb52))
+* update footer and use moment's fromNow to display date ([ef61e4d](https://github.com/clenemt/docdash/commit/ef61e4d))
+* **styles:** update styling, mostly color palette ([d6d551d](https://github.com/clenemt/docdash/commit/d6d551d))
 
 
 

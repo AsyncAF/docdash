@@ -1,3 +1,13 @@
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/clenemt/docdash/compare/v0.6.0...v0.7.0) (2018-04-27)
+
+
+### Features
+
+* **perf:** minify JS and CSS files ([c2c9b8b](https://github.com/clenemt/docdash/commit/c2c9b8b))
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/clenemt/docdash/compare/v0.5.0...v0.6.0) (2018-04-27)
 

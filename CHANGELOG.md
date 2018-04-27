@@ -1,5 +1,5 @@
-<a name="0.4.1"></a>
-## 0.4.1 (2018-04-26)
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/clenemt/docdash/compare/fa1579b...v0.5.0) (2018-04-27)
 
 
 ### Bug Fixes

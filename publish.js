@@ -207,13 +207,14 @@ function getPathFromDoclet(doclet) {
         doclet.meta.filename;
 }
 
-function generate(type, title, docs, filename, resolveLinks) {
+function generate(type, title, docs, filename, resolveLinks, isIndex) {
     resolveLinks = resolveLinks === false ? false : true;
 
     var docData = {
         type: type,
         title: title,
-        docs: docs
+        docs: docs,
+        isIndex: isIndex
     };
 
     var outpath = path.join(outdir, filename),
@@ -613,7 +614,7 @@ exports.publish = function(taffyData, opts, tutorials) {
         packages.concat(
             [{kind: 'mainpage', readme: opts.readme, longname: (opts.mainpagetitle) ? opts.mainpagetitle : 'Main Page'}]
         ).concat(files),
-    indexUrl);
+    indexUrl, undefined, true);
 
     // set up the lists that we'll use to generate pages
     var classes = taffy(members.classes);

@@ -1,3 +1,13 @@
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/clenemt/docdash/compare/v0.7.0...v0.8.0) (2018-05-01)
+
+
+### Features
+
+* **style:** make indentation consistent for multiple [@see](https://github.com/see) tags ([19aa292](https://github.com/clenemt/docdash/commit/19aa292))
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/clenemt/docdash/compare/v0.6.0...v0.7.0) (2018-04-27)
 

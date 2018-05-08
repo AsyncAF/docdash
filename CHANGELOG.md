@@ -1,3 +1,13 @@
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/clenemt/docdash/compare/v0.8.0...v0.8.1) (2018-05-08)
+
+
+### Bug Fixes
+
+* **tutorials:** fix bug where including tutorials would throw an error ([d02c7c4](https://github.com/clenemt/docdash/commit/d02c7c4))
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/clenemt/docdash/compare/v0.7.0...v0.8.0) (2018-05-01)
 

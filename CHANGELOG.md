@@ -1,3 +1,13 @@
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/clenemt/docdash/compare/v0.8.1...v0.9.0) (2018-05-08)
+
+
+### Features
+
+* **tutorials:** make tutorial header larger ([9e99215](https://github.com/clenemt/docdash/commit/9e99215))
+
+
+
 <a name="0.8.1"></a>
 ## [0.8.1](https://github.com/clenemt/docdash/compare/v0.8.0...v0.8.1) (2018-05-08)
 

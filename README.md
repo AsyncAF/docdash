@@ -1,6 +1,6 @@
 # AsyncAF/docdash
 
-This repo was forked from [docdash](https://github.com/clenemt/docdash) for the purpose of styling the documentation for [AsyncAF](https://asyncaf.github.io/AsyncAF/AsyncAF.html).
+This repo was forked from [docdash](https://github.com/clenemt/docdash) for the purpose of styling the documentation for [AsyncAF](https://async-af.js.org/AsyncAF).
 
 There are some minor changes compared with the original docdash as laid out below.
 
@@ -25,9 +25,55 @@ The main feature added is that this fork minifies the HTML/CSS/JS output files. 
 }
 </code></pre></details>
 
+## Metadata
+
+You can specify a metadata description and [open graph](http://ogp.me/) metadata in the `docdash` property of your `jsdoc.conf.js` or `jsdoc.conf.json` file. For example:
+
+```js
+// jsdoc.conf.js
+
+// ...
+docdash: {
+  meta: {
+    description: 'Async/Await Fun'
+  },
+  openGraph: {
+    title: 'AsyncAF - Documentation',
+    type: 'website',
+    image: 'https://www.example.com/your-image',
+    site_name: 'AsyncAF',
+    url: 'https://async-af.js.org/'
+  }
+}
+// ...
+
+```
+
+## Favicons
+
+Add favicons to your site in the `docdash.icons` property of your `jsdoc.conf.js` or `jsdoc.conf.json` file. I recommend this [favicon generator](https://realfavicongenerator.net/#) for an easy time.
+
+```js
+// jsdoc.conf.js
+
+// ...
+docdash: {
+  icons: { // paths are from the root of your site
+    appleTouchIcon: '/apple-touch-icon.png',
+    favicon32x32: '/favicon-32x32.png',
+    favicon16x16: '/favicon-16x16.png',
+    manifest: '/site.webmanifest',
+    msTileColor: '#2d89ef',
+    themeColor: '#ffffff'
+  }
+}
+// ...
+
+```
+
 ## Template
 
-Other than minification, the only real difference between this repo and the original docdash is layout and styling. Check out the [CHANGELOG](CHANGELOG.md#features) to see all the changes, or take a look at the [AsyncAF docs](https://asyncaf.github.io/AsyncAF/AsyncAF.html) built using this template.
+Other than that, the only real difference between this repo and the original docdash is layout and styling. Check out the [CHANGELOG](CHANGELOG.md#features) to see all the changes, or take a look at the [AsyncAF docs](https://async-af.js.org/AsyncAF) built using this template.
 
 ## Usage
 

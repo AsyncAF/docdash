@@ -25,9 +25,31 @@ The main feature added is that this fork minifies the HTML/CSS/JS output files. 
 }
 </code></pre></details>
 
+## Custom scripts & styles
+
+If you need to add any custom scripts or stylesheets you can include them in the `docdash` property of your `jsdoc.conf.js` or `jsdoc.conf.json` file:
+
+```js
+// jsdoc.conf.js
+
+// ...
+docdash: {
+  scripts: [
+    '/scripts/script1.js',
+    '/scripts/script2.js'
+  ],
+  styles: [
+    '/styles/stylesheet1.css',
+    '/styles/stylesheet2.css'
+  ]
+}
+// ...
+
+```
+
 ## Metadata
 
-You can specify a metadata description and [open graph](http://ogp.me/) metadata in the `docdash` property of your `jsdoc.conf.js` or `jsdoc.conf.json` file. For example:
+You can also specify a metadata description and metadata for [open graph](http://ogp.me/). For example:
 
 ```js
 // jsdoc.conf.js
@@ -51,7 +73,7 @@ docdash: {
 
 ## Favicons
 
-Add favicons to your site in the `docdash.icons` property of your `jsdoc.conf.js` or `jsdoc.conf.json` file. I recommend this [favicon generator](https://realfavicongenerator.net/#) for an easy time.
+Add favicons to your site in the `docdash.icons` property. If you need to make some, I'd recommend this [favicon generator](https://realfavicongenerator.net/#) for an easy time.
 
 ```js
 // jsdoc.conf.js

@@ -3,7 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title><?js= title ?> - Documentation</title>
-
+    <?js if (!env.conf.docdash) { env.conf.docdash = {};} ?>
+    <?js if (env.conf.docdash.meta) { ?>
+        <?js if (env.conf.docdash.meta.description) { ?>
+            <meta name="description" content="<?js= env.conf.docdash.meta.description ?>" />
+        <?js } ?>
+    <?js } ?>
+    <?js if (env.conf.docdash.openGraph) { ?>
+        <meta property="og:title" content="<?js= env.conf.docdash.openGraph.title ?>"/>
+        <meta property="og:type" content="<?js= env.conf.docdash.openGraph.type ?>"/>
+        <meta property="og:image" content="<?js= env.conf.docdash.openGraph.image ?>"/>
+        <?js if (env.conf.docdash.openGraph.site_name) { ?>
+            <meta property="og:site_name" content="<?js= env.conf.docdash.openGraph.site_name ?>"/>
+        <?js } ?>
+        <meta property="og:url" content="<?js= env.conf.docdash.openGraph.url ?>"/>
+    <?js } ?>
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>

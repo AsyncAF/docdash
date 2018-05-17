@@ -1,3 +1,15 @@
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/clenemt/docdash/compare/v0.9.0...v0.10.0) (2018-05-17)
+
+
+### Features
+
+* **custom files:** allow custom js/css files ([c8c16c6](https://github.com/clenemt/docdash/commit/c8c16c6))
+* **favicons:** add ability to include favicons ([fa35589](https://github.com/clenemt/docdash/commit/fa35589))
+* **metadata:** include description & open graph metadata in config ([248d2a9](https://github.com/clenemt/docdash/commit/248d2a9))
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/clenemt/docdash/compare/v0.8.1...v0.9.0) (2018-05-08)
 

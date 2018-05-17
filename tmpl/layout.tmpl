@@ -18,6 +18,26 @@
         <?js } ?>
         <meta property="og:url" content="<?js= env.conf.docdash.openGraph.url ?>"/>
     <?js } ?>
+    <?js if (env.conf.docdash.icons) { ?>
+      <?js if (env.conf.docdash.icons.appleTouchIcon) { ?>
+        <link rel="apple-touch-icon" sizes="180x180" href="<?js= env.conf.docdash.icons.appleTouchIcon ?>">
+      <?js } ?>
+      <?js if (env.conf.docdash.icons.favicon32x32) { ?>
+        <link rel="icon" type="image/png" sizes="32x32" href="<?js= env.conf.docdash.icons.favicon32x32 ?>">
+      <?js } ?>
+      <?js if (env.conf.docdash.icons.favicon16x16) { ?>
+        <link rel="icon" type="image/png" sizes="16x16" href="<?js= env.conf.docdash.icons.favicon16x16 ?>">
+      <?js } ?>
+      <?js if (env.conf.docdash.icons.manifest) { ?>
+        <link rel="manifest" href="<?js= env.conf.docdash.icons.manifest ?>">
+      <?js } ?>
+      <?js if (env.conf.docdash.icons.msTileColor) { ?>
+        <meta name="msapplication-TileColor" content="<?js= env.conf.docdash.icons.msTileColor ?>">
+      <?js } ?>
+      <?js if (env.conf.docdash.icons.themeColor) { ?>
+        <meta name="theme-color" content="<?js= env.conf.docdash.icons.themeColor ?>">
+      <?js } ?>
+    <?js } ?>
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>

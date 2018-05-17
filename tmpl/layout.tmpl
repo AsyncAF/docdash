@@ -76,5 +76,19 @@
 
 <script>prettyPrint();</script>
 <script src="scripts/linenumber.js"></script>
+<?js if (env.conf.docdash.scripts && env.conf.docdash.scripts.length) {
+    for(var i = 0; i < env.conf.docdash.scripts.length; i++){
+        ?>
+        <script src="<?js= env.conf.docdash.scripts[i] ?>"></script>
+        <?js
+    }
+} ?>
+<?js if (env.conf.docdash.styles && env.conf.docdash.styles.length) {
+    for(var j = 0; j < env.conf.docdash.styles.length; j++){
+    ?>
+    <link type="text/css" rel="stylesheet" href="<?js= env.conf.docdash.styles[i] ?>">
+    <?js
+    }
+} ?>
 </body>
 </html>

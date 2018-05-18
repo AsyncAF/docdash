@@ -1,3 +1,13 @@
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/clenemt/docdash/compare/v0.10.0...v0.10.1) (2018-05-18)
+
+
+### Bug Fixes
+
+* fix background color on code blocks that scroll horizontally ([8136cd8](https://github.com/clenemt/docdash/commit/8136cd8))
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/clenemt/docdash/compare/v0.9.0...v0.10.0) (2018-05-17)
 

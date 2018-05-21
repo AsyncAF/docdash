@@ -1,3 +1,13 @@
+<a name="0.11.1"></a>
+## [0.11.1](https://github.com/clenemt/docdash/compare/v0.11.0...v0.11.1) (2018-05-21)
+
+
+### Bug Fixes
+
+* **params:** fix params table styling ([50585a1](https://github.com/clenemt/docdash/commit/50585a1))
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/clenemt/docdash/compare/v0.10.2...v0.11.0) (2018-05-19)
 
